@@ -1,0 +1,42 @@
+{
+  "name": "@meetup/swarm-stripe",
+  "version": "0.0.1",
+  "description": "Stripe elements",
+  "author": "Daniel Hayes <dhayes@meetup.com>",
+  "homepage": "https://swarm-docs.now.sh/",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meetup/swarm-ui.git"
+  },
+  "scripts": {
+    "build": "npx babel src --out-dir lib --ignore 'src/**/*.test.js','src/**/*.test.jsx','src/testUtils/**/*'",
+    "develop": "npx babel src/ --watch -d lib/"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.4.3",
+    "@babel/core": "7.4.3",
+    "@babel/plugin-proposal-class-properties": "7.4.0",
+    "@babel/preset-env": "7.4.3",
+    "@babel/preset-flow": "7.0.0",
+    "@babel/preset-react": "7.0.0",
+    "babel-plugin-react-docgen": "2.0.2"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6"
+  },
+  "bugs": {
+    "url": "https://github.com/meetup/swarm-ui/issues"
+  },
+  "dependencies": {
+    "react-stripe-elements": "^3.0.0"
+  }
+}

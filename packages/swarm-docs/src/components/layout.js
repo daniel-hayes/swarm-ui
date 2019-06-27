@@ -45,8 +45,9 @@ const Layout = ({ children }) => {
           >
             <html lang="en" />
             {require('swarm-icons/dist/sprite/sprite.inc')}
+            <script src="https://js.stripe.com/v3/" />
           </Helmet>
-          <Nav fileNames={ data.allFile.edges.map((value) => value.node.name)} />
+          <Nav fileNames={data.allFile.edges.map((value) => value.node.name)} />
           <div className="main">
             <Header siteTitle={data.site.siteMetadata.title} />
             <div>
@@ -58,7 +59,7 @@ const Layout = ({ children }) => {
                 style={{ height: 0, overflow: 'hidden' }}
               />
             </div>
-        </div>
+          </div>
         </>
       )}
     />
